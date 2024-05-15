@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Asking for Date</title>
+</head>
+<body>
+    <div class="container">
+         <div class="gif_container">
+        <img
+          src="https://media.tenor.com/6XTLHcFj51sAAAAM/cant-wait.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+        <h1>Let's Fix a date</h1>
+        <label for="dateInput">Select a Date:</label>
+        <input type="datetime-local" id="dateInput" required>
+        <button onclick="sendInvitation()">Date Fixed !! </button>
+        <div id="confirmationMessage"></div>
+    </div>
+   
+    <script> 
+    function sendInvitation() {
+    const dateInput = document.getElementById('dateInput').value;
+    
+    
+    const confirmationMessage = document.getElementById('confirmationMessage');
+    confirmationMessage.innerHTML = `Date Timing: ${dateInput} meet soon!`;
+}
+
+    </script>
+</body>
+</html>
